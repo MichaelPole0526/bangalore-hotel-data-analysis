@@ -145,3 +145,70 @@ The Best 20 Hotel Score group did not have a statistically significant differenc
 One important limitation is that some of these results should be interpreted carefully because the `hotel_score` was created using guest rating, review count, price, distance, and room size. Therefore, comparisons involving the Best 20 Hotel Score group may partly reflect how the score was constructed.
 
 ## Visualizations
+## Visualizations
+
+### Guest Rating: Top 20 Hotels vs. Other Hotels
+
+![Guest rating comparison between top 20 hotels and other hotels](Figures/guest_rating_top_hotels_vs_other_hotel.png)
+
+This boxplot compares guest ratings between the Best 20 Hotel Score group and the hotels outside the top 20. The Best 20 Hotel Score group has a higher average guest rating, showing that the top-ranked hotels generally received stronger guest reviews.
+
+### Guest Rating: Cheap vs. Expensive Hotels
+
+![Guest rating comparison between cheap and expensive hotels](Figures/guest_rating_cheap_expensive_hotel.png)
+
+This boxplot compares guest ratings between cheap and expensive hotels. The two groups have very similar guest rating distributions, suggesting that cheaper hotels were not necessarily rated lower by guests.
+
+### Room Size: Top 20 Hotels vs. Other Hotels
+
+![Room size comparison between top 20 hotels and other hotels](Figures/roomsize_top_hotels_vs_other_hotel.png)
+
+This boxplot compares room size between the Best 20 Hotel Score group and the hotels outside the top 20. The top 20 hotels appear to have slightly larger rooms on average, but there is still a lot of overlap between the two groups.
+
+### Room Size: Cheap vs. Expensive Hotels
+
+![Room size comparison between cheap and expensive hotels](Figures/roomsize_cheap_expensive_hotel.png)
+
+This boxplot compares room size between cheap and expensive hotels. The distributions are very similar, which suggests that expensive hotels did not have much larger rooms on average than cheap hotels in this dataset.
+
+### Distance From City Center: Top 20 Hotels vs. Other Hotels
+
+![Distance from city center comparison between top 20 hotels and other hotels](Figures/distance_from_city_center_top_hotel_other_hotel.png)
+
+This boxplot compares the distance from the city center between the Best 20 Hotel Score group and the hotels outside the top 20. The Best 20 Hotel Score group is generally closer to the city center, suggesting that location was an important factor in overall hotel value.
+
+### Distance From City Center: Cheap vs. Expensive Hotels
+
+![Distance from city center comparison between cheap and expensive hotels](Figures/distance_from_city_center_cheap_expensive_hotel.png)
+
+This boxplot compares the distance from the city center between cheap and expensive hotels. Cheap hotels tend to be slightly farther from the city center on average than expensive hotels.
+
+### Star Rating: Top 20 Hotels vs. Other Hotels
+
+![Star rating comparison between top 20 hotels and other hotels](Figures/star_rating_top_20_other_hotel.png)
+
+This boxplot compares star ratings between the Best 20 Hotel Score group and the hotels outside the top 20. The hotels outside the top 20 have higher star ratings on average, showing that the best-value hotels were not always the highest-star hotels.
+
+### Star Rating: Cheap vs. Expensive Hotels
+
+![Star rating comparison between cheap and expensive hotels](Figures/star_rating_cheap_expensive_hotel.png)
+
+This boxplot compares star ratings between cheap and expensive hotels. Expensive hotels have noticeably higher star ratings than cheap hotels, which shows that star rating is strongly connected to hotel price.
+
+### Price per Night: Top 20 Hotels vs. Other Hotels
+
+![Price per night comparison between top 20 hotels and other hotels](Figures/price_per_night_top_20_other_hotel.png)
+
+This boxplot compares price per night between the Best 20 Hotel Score group and the hotels outside the top 20. The Best 20 Hotel Score group has lower prices on average, suggesting that the top-ranked hotels offered better value rather than simply being the most expensive hotels.
+
+### Price per Night: Cheap vs. Expensive Hotels
+
+![Price per night comparison between cheap and expensive hotels](Figures/price_per_night_cheap_expensive_hotel.png)
+
+This boxplot compares price per night between cheap and expensive hotels. Expensive hotels have much higher prices, which is expected because the price groups were created using the `price_per_night_inr` variable.
+
+### Relationship Between Star Rating and Price per Night
+
+![Scatterplot showing relationship between star rating and price per night](Figures/relationship_between_star_rating_price_per_night.png)
+
+This scatterplot shows the relationship between star rating and price per night. The upward trend line shows that hotels with higher star ratings tend to have higher prices. This supports the regression and ANOVA results, which showed that star rating was the strongest predictor of hotel price in this dataset.
