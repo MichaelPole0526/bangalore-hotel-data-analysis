@@ -1,0 +1,501 @@
+city,area,hotel_name,star_rating,room_type,number_of_guests,price_per_night_inr,date_checked,guest_rating,review_count,room_size_sqft,distance_from_city_center_km
+Bangalore,Whitefield,Whitefield Hotel 1,5,Deluxe,2,20215,2/21/2026,7.9,2065,347,14.57
+Bangalore,Arekere,Arekere Hotel 2,4,Suite,3,6708,3/26/2026,8.6,1499,642,14.14
+Bangalore,Whitefield,Whitefield Hotel 3,5,Standard,4,13890,1/28/2026,9.4,871,211,5.51
+Bangalore,MG Road,MG Road Hotel 4,3,Suite,2,3692,1/3/2026,8.1,1558,601,0.93
+Bangalore,MG Road,MG Road Hotel 5,5,Deluxe,1,15657,3/22/2026,8.6,3969,317,1.03
+Bangalore,Rajajinagar,Rajajinagar Hotel 6,5,Standard,4,17381,2/21/2026,8.4,2406,260,9.39
+Bangalore,Whitefield,Whitefield Hotel 7,5,Standard,4,18019,1/7/2026,8.8,508,216,9.41
+Bangalore,Arekere,Arekere Hotel 8,4,Deluxe,2,5488,1/5/2026,7.7,2011,372,3.04
+Bangalore,MG Road,MG Road Hotel 9,3,Standard,3,3373,2/21/2026,9,1996,235,0.18
+Bangalore,MG Road,MG Road Hotel 10,5,Suite,3,15827,4/29/2026,8.5,983,637,0.2
+Bangalore,Arekere,Arekere Hotel 11,5,Standard,2,11031,3/9/2026,9.3,4087,254,3.68
+Bangalore,Rajajinagar,Rajajinagar Hotel 12,3,Suite,3,4830,1/8/2026,8.3,3661,416,18.6
+Bangalore,Rajajinagar,Rajajinagar Hotel 13,3,Deluxe,1,3165,3/20/2026,7.7,2833,381,11.32
+Bangalore,MG Road,MG Road Hotel 14,4,Standard,3,5927,1/11/2026,8.7,2811,297,1.43
+Bangalore,Whitefield,Whitefield Hotel 15,3,Suite,3,2623,4/16/2026,9.4,4353,542,10.76
+Bangalore,MG Road,MG Road Hotel 16,3,Deluxe,3,4450,1/3/2026,8.2,4909,316,0.78
+Bangalore,Whitefield,Whitefield Hotel 17,4,Suite,4,8323,4/6/2026,8,1741,527,18.62
+Bangalore,Arekere,Arekere Hotel 18,4,Standard,1,5002,2/24/2026,8.3,1854,254,4.73
+Bangalore,Rajajinagar,Rajajinagar Hotel 19,4,Deluxe,3,6475,1/1/2026,9,284,364,13.26
+Bangalore,Whitefield,Whitefield Hotel 20,5,Standard,3,24729,2/18/2026,9,2336,241,6.48
+Bangalore,MG Road,MG Road Hotel 21,5,Deluxe,2,24657,2/19/2026,9.1,554,375,1.28
+Bangalore,Whitefield,Whitefield Hotel 22,4,Deluxe,3,6467,4/28/2026,8.9,3315,332,17.01
+Bangalore,MG Road,MG Road Hotel 23,4,Deluxe,4,6000,3/21/2026,8.5,4647,381,1.01
+Bangalore,Arekere,Arekere Hotel 24,4,Deluxe,1,8650,3/10/2026,8.1,1696,326,3.29
+Bangalore,Rajajinagar,Rajajinagar Hotel 25,5,Standard,3,21690,3/6/2026,8.3,3685,278,7.38
+Bangalore,Arekere,Arekere Hotel 26,3,Standard,1,4969,3/2/2026,8.9,3816,244,19.09
+Bangalore,Arekere,Arekere Hotel 27,5,Deluxe,4,25301,4/14/2026,8.1,721,355,15.53
+Bangalore,Whitefield,Whitefield Hotel 28,5,Suite,2,22104,4/23/2026,8.5,4749,655,9.41
+Bangalore,Whitefield,Whitefield Hotel 29,4,Suite,1,5404,2/19/2026,7.8,3270,621,14.15
+Bangalore,MG Road,MG Road Hotel 30,3,Standard,3,4446,3/16/2026,9.1,1435,244,1.29
+Bangalore,Arekere,Arekere Hotel 31,3,Deluxe,3,3694,2/5/2026,8.7,3402,387,10.18
+Bangalore,Arekere,Arekere Hotel 32,3,Standard,4,2607,3/26/2026,8.4,1701,212,3.53
+Bangalore,Arekere,Arekere Hotel 33,3,Suite,1,2570,1/29/2026,8.8,2332,684,10.81
+Bangalore,Rajajinagar,Rajajinagar Hotel 34,5,Deluxe,2,17977,2/15/2026,8.5,2312,318,7.86
+Bangalore,Arekere,Arekere Hotel 35,5,Deluxe,1,24906,1/3/2026,8.6,4535,312,15.96
+Bangalore,MG Road,MG Road Hotel 36,3,Standard,1,4846,2/6/2026,9,1234,271,0.87
+Bangalore,Arekere,Arekere Hotel 37,4,Suite,3,8844,3/20/2026,7.7,4081,634,10.59
+Bangalore,Arekere,Arekere Hotel 38,3,Deluxe,4,3813,3/25/2026,8.3,2640,365,12.37
+Bangalore,Arekere,Arekere Hotel 39,4,Deluxe,4,9596,2/14/2026,7.8,2959,398,11.43
+Bangalore,Whitefield,Whitefield Hotel 40,4,Standard,4,9020,1/2/2026,9.2,846,283,6.55
+Bangalore,MG Road,MG Road Hotel 41,4,Deluxe,3,5879,3/10/2026,8.2,3061,361,0.99
+Bangalore,MG Road,MG Road Hotel 42,5,Standard,2,20804,3/30/2026,9.3,368,203,0.36
+Bangalore,Whitefield,Whitefield Hotel 43,3,Suite,1,2610,3/27/2026,8.1,2146,533,9.44
+Bangalore,Whitefield,Whitefield Hotel 44,5,Standard,3,24072,1/23/2026,7.9,3750,276,17.07
+Bangalore,MG Road,MG Road Hotel 45,5,Suite,4,12301,2/28/2026,8.6,4862,536,0.48
+Bangalore,Rajajinagar,Rajajinagar Hotel 46,5,Deluxe,4,10339,1/5/2026,9.1,1149,389,15.82
+Bangalore,Whitefield,Whitefield Hotel 47,4,Deluxe,2,9228,3/23/2026,8.8,449,384,16.4
+Bangalore,Arekere,Arekere Hotel 48,4,Suite,3,5753,1/4/2026,9.2,1202,693,12.48
+Bangalore,Rajajinagar,Rajajinagar Hotel 49,3,Suite,3,3416,4/8/2026,7.7,3476,695,15.47
+Bangalore,Whitefield,Whitefield Hotel 50,5,Deluxe,1,13404,1/28/2026,9.1,621,345,14.23
+Bangalore,MG Road,MG Road Hotel 51,3,Standard,4,2678,3/21/2026,7.7,794,286,0.66
+Bangalore,Rajajinagar,Rajajinagar Hotel 52,4,Standard,2,9469,1/29/2026,8.9,507,287,16.09
+Bangalore,Arekere,Arekere Hotel 53,5,Suite,3,17898,1/30/2026,7.7,1580,694,4.37
+Bangalore,MG Road,MG Road Hotel 54,5,Deluxe,1,10017,4/12/2026,7.6,2494,319,0.33
+Bangalore,Whitefield,Whitefield Hotel 55,4,Suite,2,7610,2/13/2026,8.2,3764,673,16.53
+Bangalore,Rajajinagar,Rajajinagar Hotel 56,5,Suite,1,12756,3/27/2026,8,4104,449,2.45
+Bangalore,MG Road,MG Road Hotel 57,5,Deluxe,1,15593,4/17/2026,8.3,530,364,0.04
+Bangalore,Whitefield,Whitefield Hotel 58,3,Deluxe,4,3115,3/20/2026,9.1,291,335,4.26
+Bangalore,MG Road,MG Road Hotel 59,4,Deluxe,3,7944,2/1/2026,7.8,3721,383,1.46
+Bangalore,Rajajinagar,Rajajinagar Hotel 60,3,Suite,3,4994,4/1/2026,8.7,3264,450,13.2
+Bangalore,Arekere,Arekere Hotel 61,5,Standard,1,12538,2/23/2026,8.9,3061,258,3.04
+Bangalore,Arekere,Arekere Hotel 62,3,Standard,4,4144,1/2/2026,8.2,3100,201,10
+Bangalore,Whitefield,Whitefield Hotel 63,4,Deluxe,2,8563,1/28/2026,7.8,1652,388,8.47
+Bangalore,MG Road,MG Road Hotel 64,3,Deluxe,2,3137,3/18/2026,8.5,1088,358,1.05
+Bangalore,Rajajinagar,Rajajinagar Hotel 65,3,Standard,4,2583,2/3/2026,8.8,424,273,18.76
+Bangalore,Arekere,Arekere Hotel 66,3,Standard,1,4837,3/27/2026,8.7,2541,299,11.85
+Bangalore,Arekere,Arekere Hotel 67,4,Suite,2,7273,2/13/2026,9,1183,508,18.38
+Bangalore,MG Road,MG Road Hotel 68,4,Standard,3,6107,1/19/2026,7.9,1921,271,0.46
+Bangalore,Whitefield,Whitefield Hotel 69,3,Suite,2,4411,3/15/2026,8.8,3637,577,5.64
+Bangalore,Arekere,Arekere Hotel 70,3,Deluxe,4,3416,4/11/2026,7.5,1951,363,2.16
+Bangalore,Rajajinagar,Rajajinagar Hotel 71,4,Standard,4,7347,4/25/2026,7.6,3792,284,4.31
+Bangalore,MG Road,MG Road Hotel 72,5,Deluxe,1,11138,2/27/2026,7.6,3968,348,0.63
+Bangalore,MG Road,MG Road Hotel 73,4,Standard,1,5706,3/9/2026,9.4,1932,244,0.61
+Bangalore,Rajajinagar,Rajajinagar Hotel 74,5,Suite,2,18055,2/11/2026,9.3,4419,615,13.09
+Bangalore,MG Road,MG Road Hotel 75,5,Deluxe,2,23585,2/28/2026,7.6,2917,368,1.36
+Bangalore,Arekere,Arekere Hotel 76,3,Deluxe,4,3768,2/24/2026,8.7,4314,366,17.71
+Bangalore,Rajajinagar,Rajajinagar Hotel 77,4,Deluxe,1,5285,1/23/2026,8.1,2413,353,7.66
+Bangalore,Whitefield,Whitefield Hotel 78,4,Suite,1,9998,4/28/2026,8.1,2367,446,6.51
+Bangalore,MG Road,MG Road Hotel 79,5,Standard,4,24105,1/2/2026,9.1,3399,245,1.42
+Bangalore,Rajajinagar,Rajajinagar Hotel 80,4,Standard,2,6289,1/28/2026,8.4,54,233,16.66
+Bangalore,MG Road,MG Road Hotel 81,4,Suite,4,9885,1/18/2026,7.8,4953,666,0.36
+Bangalore,MG Road,MG Road Hotel 82,4,Standard,3,5914,2/2/2026,8.3,3667,286,1.33
+Bangalore,Rajajinagar,Rajajinagar Hotel 83,5,Suite,3,24166,1/30/2026,9.4,2247,660,5.26
+Bangalore,MG Road,MG Road Hotel 84,4,Suite,1,9730,4/3/2026,8,1929,607,1.02
+Bangalore,Arekere,Arekere Hotel 85,3,Suite,3,4662,2/2/2026,8.3,4715,416,5.05
+Bangalore,Rajajinagar,Rajajinagar Hotel 86,3,Deluxe,4,3800,2/9/2026,7.7,3786,381,12.53
+Bangalore,Arekere,Arekere Hotel 87,4,Standard,4,6506,3/14/2026,9.1,3032,291,14.31
+Bangalore,Whitefield,Whitefield Hotel 88,4,Deluxe,2,9648,3/18/2026,8.2,4738,392,15.5
+Bangalore,Whitefield,Whitefield Hotel 89,3,Standard,4,4605,2/24/2026,7.6,502,219,2.46
+Bangalore,Whitefield,Whitefield Hotel 90,4,Suite,4,8055,2/12/2026,9,1024,644,3.88
+Bangalore,MG Road,MG Road Hotel 91,3,Deluxe,2,2968,1/12/2026,8.3,304,378,0.93
+Bangalore,MG Road,MG Road Hotel 92,4,Suite,3,8560,4/30/2026,8.8,1668,439,1.42
+Bangalore,Arekere,Arekere Hotel 93,3,Standard,2,3877,2/11/2026,8.8,4729,216,6.97
+Bangalore,Whitefield,Whitefield Hotel 94,4,Deluxe,3,7487,1/26/2026,9.3,2197,359,12.85
+Bangalore,Arekere,Arekere Hotel 95,3,Suite,4,3580,2/14/2026,7.8,4903,484,7.58
+Bangalore,Whitefield,Whitefield Hotel 96,5,Standard,1,11569,2/16/2026,9.4,4854,226,8.78
+Bangalore,Rajajinagar,Rajajinagar Hotel 97,3,Standard,3,2615,3/21/2026,8.3,3896,284,9.23
+Bangalore,MG Road,MG Road Hotel 98,5,Suite,4,10092,2/8/2026,8.4,3148,565,1.16
+Bangalore,Rajajinagar,Rajajinagar Hotel 99,5,Suite,3,23483,1/1/2026,8.4,4727,614,10.16
+Bangalore,Arekere,Arekere Hotel 100,4,Suite,4,6597,4/20/2026,7.9,791,423,11.85
+Bangalore,Arekere,Arekere Hotel 101,3,Suite,1,3202,3/12/2026,8.8,1355,513,14.72
+Bangalore,Whitefield,Whitefield Hotel 102,5,Suite,1,15414,2/18/2026,8.7,648,646,11.69
+Bangalore,Rajajinagar,Rajajinagar Hotel 103,5,Standard,4,11683,4/17/2026,8.8,2292,256,15.06
+Bangalore,MG Road,MG Road Hotel 104,5,Standard,1,15736,4/12/2026,7.6,1464,254,0.17
+Bangalore,Whitefield,Whitefield Hotel 105,3,Deluxe,3,4326,1/1/2026,8.8,328,397,18.57
+Bangalore,Arekere,Arekere Hotel 106,3,Standard,2,2570,3/4/2026,9.5,4255,277,16.2
+Bangalore,Whitefield,Whitefield Hotel 107,4,Standard,3,9678,2/10/2026,9.1,1227,208,12.69
+Bangalore,MG Road,MG Road Hotel 108,3,Deluxe,2,3139,3/4/2026,8,261,339,0.46
+Bangalore,Rajajinagar,Rajajinagar Hotel 109,3,Suite,1,2537,3/25/2026,9.1,2792,628,19.8
+Bangalore,Arekere,Arekere Hotel 110,4,Deluxe,2,5242,2/9/2026,7.7,2190,368,4.34
+Bangalore,Rajajinagar,Rajajinagar Hotel 111,4,Standard,2,5387,3/6/2026,7.9,133,249,11.79
+Bangalore,Whitefield,Whitefield Hotel 112,3,Standard,3,4102,3/1/2026,7.8,3030,203,12.44
+Bangalore,MG Road,MG Road Hotel 113,5,Suite,1,24245,4/6/2026,8.6,970,505,0.06
+Bangalore,Arekere,Arekere Hotel 114,5,Standard,1,17033,2/23/2026,8.9,2907,238,15.39
+Bangalore,Arekere,Arekere Hotel 115,4,Standard,1,6313,4/25/2026,7.5,1004,287,3.97
+Bangalore,Whitefield,Whitefield Hotel 116,5,Suite,3,11821,3/17/2026,9.3,1618,419,14.77
+Bangalore,Rajajinagar,Rajajinagar Hotel 117,5,Standard,4,12607,3/20/2026,8.1,1450,296,19.51
+Bangalore,Arekere,Arekere Hotel 118,5,Deluxe,4,19714,3/18/2026,8.9,2121,326,8.67
+Bangalore,MG Road,MG Road Hotel 119,4,Suite,3,5173,3/13/2026,9.1,4588,408,1.49
+Bangalore,Rajajinagar,Rajajinagar Hotel 120,3,Deluxe,2,3976,1/2/2026,9.4,3521,349,5.88
+Bangalore,Whitefield,Whitefield Hotel 121,3,Standard,3,4846,3/1/2026,9,2369,262,9.16
+Bangalore,Arekere,Arekere Hotel 122,4,Deluxe,4,6461,4/12/2026,9.2,823,309,9.28
+Bangalore,Whitefield,Whitefield Hotel 123,4,Deluxe,3,8192,4/13/2026,9.2,310,386,6.25
+Bangalore,Whitefield,Whitefield Hotel 124,4,Standard,4,7901,3/18/2026,8.6,4947,281,8.74
+Bangalore,MG Road,MG Road Hotel 125,3,Standard,3,4262,3/2/2026,7.8,2979,213,0.58
+Bangalore,Rajajinagar,Rajajinagar Hotel 126,5,Suite,1,15237,3/6/2026,7.8,3451,668,11.18
+Bangalore,Rajajinagar,Rajajinagar Hotel 127,3,Deluxe,4,4464,4/5/2026,8.8,4614,338,11.95
+Bangalore,Whitefield,Whitefield Hotel 128,5,Standard,1,22125,3/23/2026,8.6,3684,245,17.2
+Bangalore,Whitefield,Whitefield Hotel 129,3,Suite,4,3604,1/11/2026,8.1,207,510,11.21
+Bangalore,Whitefield,Whitefield Hotel 130,4,Suite,2,8741,1/22/2026,8.9,3972,681,19.34
+Bangalore,Rajajinagar,Rajajinagar Hotel 131,5,Suite,1,10702,4/19/2026,8.3,908,461,11.85
+Bangalore,Arekere,Arekere Hotel 132,3,Deluxe,4,4466,2/9/2026,8.8,2678,329,7.68
+Bangalore,Whitefield,Whitefield Hotel 133,3,Deluxe,3,2606,4/8/2026,8.7,676,378,12.2
+Bangalore,MG Road,MG Road Hotel 134,3,Suite,2,4584,1/24/2026,9,1039,417,0.57
+Bangalore,Whitefield,Whitefield Hotel 135,3,Standard,4,3342,4/16/2026,8,3844,205,5.27
+Bangalore,MG Road,MG Road Hotel 136,5,Deluxe,2,24101,1/31/2026,8.8,1182,332,0.71
+Bangalore,MG Road,MG Road Hotel 137,3,Deluxe,4,4500,3/4/2026,8.8,4287,303,0.18
+Bangalore,Arekere,Arekere Hotel 138,4,Standard,3,9463,1/5/2026,8.2,1388,261,5.88
+Bangalore,Arekere,Arekere Hotel 139,4,Standard,4,6249,4/25/2026,7.9,4701,235,10.54
+Bangalore,MG Road,MG Road Hotel 140,5,Standard,3,12081,1/31/2026,7.6,646,221,1.21
+Bangalore,Whitefield,Whitefield Hotel 141,3,Deluxe,1,4691,1/6/2026,9.4,168,348,2.45
+Bangalore,Rajajinagar,Rajajinagar Hotel 142,4,Suite,3,9821,4/21/2026,8.7,966,636,14.29
+Bangalore,Arekere,Arekere Hotel 143,5,Deluxe,3,12233,1/3/2026,9.3,4216,356,3.01
+Bangalore,MG Road,MG Road Hotel 144,3,Deluxe,4,2622,4/6/2026,8.3,597,398,0.45
+Bangalore,MG Road,MG Road Hotel 145,5,Standard,2,20054,1/18/2026,8.9,1543,273,0.9
+Bangalore,Rajajinagar,Rajajinagar Hotel 146,5,Standard,3,22352,2/27/2026,8.6,2424,209,14.67
+Bangalore,Whitefield,Whitefield Hotel 147,3,Deluxe,3,4485,1/25/2026,9,2208,382,17.83
+Bangalore,Whitefield,Whitefield Hotel 148,3,Suite,4,4449,3/11/2026,8.5,2499,612,9.46
+Bangalore,Whitefield,Whitefield Hotel 149,3,Standard,4,3433,2/6/2026,8,2046,295,14.32
+Bangalore,MG Road,MG Road Hotel 150,3,Standard,2,2500,3/7/2026,8.9,914,251,0.09
+Bangalore,Arekere,Arekere Hotel 151,3,Standard,3,4529,4/7/2026,7.8,4472,280,8.01
+Bangalore,Rajajinagar,Rajajinagar Hotel 152,3,Deluxe,1,3369,4/15/2026,8.6,2098,393,5.96
+Bangalore,Whitefield,Whitefield Hotel 153,5,Deluxe,4,13061,3/20/2026,9.2,869,325,9.36
+Bangalore,Rajajinagar,Rajajinagar Hotel 154,5,Deluxe,4,13989,4/15/2026,7.9,406,306,8.08
+Bangalore,MG Road,MG Road Hotel 155,5,Standard,4,23715,1/4/2026,8.3,1086,205,0.47
+Bangalore,Whitefield,Whitefield Hotel 156,4,Suite,1,6530,2/7/2026,8.8,4765,647,17.24
+Bangalore,Arekere,Arekere Hotel 157,3,Standard,4,4245,3/20/2026,9,2786,253,4.38
+Bangalore,MG Road,MG Road Hotel 158,5,Deluxe,4,21638,4/11/2026,7.6,1125,311,0.91
+Bangalore,Arekere,Arekere Hotel 159,3,Deluxe,3,4654,1/21/2026,8.5,3678,349,12.49
+Bangalore,Whitefield,Whitefield Hotel 160,3,Deluxe,4,4873,4/29/2026,9,2603,343,16.11
+Bangalore,Arekere,Arekere Hotel 161,4,Suite,1,5231,2/8/2026,8,4977,409,11.79
+Bangalore,MG Road,MG Road Hotel 162,5,Standard,3,23560,1/14/2026,8.9,175,253,0.51
+Bangalore,Arekere,Arekere Hotel 163,4,Suite,4,5554,1/26/2026,8.5,3901,467,2.09
+Bangalore,Whitefield,Whitefield Hotel 164,4,Suite,3,5455,1/9/2026,8.3,2193,492,3.92
+Bangalore,Arekere,Arekere Hotel 165,3,Suite,4,3233,4/4/2026,8.1,4612,672,2.8
+Bangalore,MG Road,MG Road Hotel 166,4,Deluxe,4,5879,3/24/2026,8.5,3933,314,0.2
+Bangalore,Whitefield,Whitefield Hotel 167,5,Suite,2,14586,1/2/2026,8.7,3502,523,17.95
+Bangalore,Whitefield,Whitefield Hotel 168,5,Suite,4,22282,2/8/2026,7.6,3321,502,12.09
+Bangalore,MG Road,MG Road Hotel 169,5,Standard,4,16663,1/3/2026,7.6,318,292,0.32
+Bangalore,Rajajinagar,Rajajinagar Hotel 170,4,Deluxe,4,9060,2/1/2026,8.6,2135,320,7.26
+Bangalore,Rajajinagar,Rajajinagar Hotel 171,4,Standard,3,6900,1/6/2026,8.2,4748,222,12.42
+Bangalore,Rajajinagar,Rajajinagar Hotel 172,4,Deluxe,1,7763,4/22/2026,8,591,394,4.43
+Bangalore,MG Road,MG Road Hotel 173,5,Deluxe,4,19376,1/29/2026,9.3,2042,328,1.48
+Bangalore,MG Road,MG Road Hotel 174,3,Deluxe,3,3103,2/13/2026,8.9,2027,386,0.31
+Bangalore,Arekere,Arekere Hotel 175,4,Deluxe,2,5186,4/28/2026,8.4,771,300,5.96
+Bangalore,Rajajinagar,Rajajinagar Hotel 176,3,Suite,3,3688,1/10/2026,7.6,224,536,6.6
+Bangalore,Whitefield,Whitefield Hotel 177,4,Suite,4,6468,2/26/2026,8.9,685,529,4.26
+Bangalore,Rajajinagar,Rajajinagar Hotel 178,5,Suite,4,11857,1/31/2026,9.1,2769,459,6.11
+Bangalore,Arekere,Arekere Hotel 179,5,Standard,4,21243,2/11/2026,9.4,2994,211,19.75
+Bangalore,MG Road,MG Road Hotel 180,4,Standard,2,9397,1/16/2026,8.6,4660,279,0.4
+Bangalore,MG Road,MG Road Hotel 181,4,Suite,4,7406,1/8/2026,7.6,287,514,1.11
+Bangalore,MG Road,MG Road Hotel 182,3,Deluxe,3,3272,2/28/2026,8.7,402,356,0.14
+Bangalore,Arekere,Arekere Hotel 183,4,Standard,3,7078,1/20/2026,8.2,720,200,17.28
+Bangalore,Whitefield,Whitefield Hotel 184,4,Standard,4,8177,2/22/2026,7.7,1668,281,16.43
+Bangalore,Arekere,Arekere Hotel 185,4,Standard,4,6481,4/10/2026,8.7,3856,291,18.46
+Bangalore,Whitefield,Whitefield Hotel 186,3,Standard,3,3306,3/23/2026,9,281,252,5.91
+Bangalore,Whitefield,Whitefield Hotel 187,5,Suite,2,24128,2/11/2026,8,1561,581,13.75
+Bangalore,Arekere,Arekere Hotel 188,4,Standard,1,7494,2/27/2026,7.6,1091,223,9.04
+Bangalore,Arekere,Arekere Hotel 189,5,Suite,4,14608,3/28/2026,8.9,1284,419,5.71
+Bangalore,Rajajinagar,Rajajinagar Hotel 190,5,Suite,1,17232,2/18/2026,8.9,3590,642,9.13
+Bangalore,Rajajinagar,Rajajinagar Hotel 191,5,Suite,4,14511,2/21/2026,7.9,929,604,16.57
+Bangalore,MG Road,MG Road Hotel 192,4,Standard,3,9157,3/31/2026,7.9,448,220,1.44
+Bangalore,MG Road,MG Road Hotel 193,5,Standard,2,14090,2/15/2026,8.8,4774,261,0.62
+Bangalore,Whitefield,Whitefield Hotel 194,3,Suite,1,3524,1/17/2026,9,4254,548,11.56
+Bangalore,Arekere,Arekere Hotel 195,3,Suite,4,2567,4/7/2026,9,813,503,18.82
+Bangalore,MG Road,MG Road Hotel 196,4,Suite,3,5960,4/18/2026,8.4,1327,457,0.14
+Bangalore,Arekere,Arekere Hotel 197,5,Deluxe,1,21581,2/4/2026,9,963,326,11.42
+Bangalore,MG Road,MG Road Hotel 198,5,Suite,1,18706,2/18/2026,7.5,2411,674,0.92
+Bangalore,Arekere,Arekere Hotel 199,5,Deluxe,4,11399,3/11/2026,9.4,4425,356,8.29
+Bangalore,MG Road,MG Road Hotel 200,5,Suite,2,15683,3/3/2026,9,1670,691,0.95
+Bangalore,MG Road,Emerald MG Road Retreat,3,Standard,3,4556,8/15/2026,9.1,3004,290,0.94
+Bangalore,Whitefield,Elite Whitefield Palace,5,Deluxe,1,10189,6/23/2026,8.9,4088,347,15.38
+Bangalore,Rajajinagar,Royal Rajajinagar Retreat,5,Deluxe,2,21441,7/1/2026,8.1,4788,337,8.54
+Bangalore,Rajajinagar,Grand Rajajinagar Stay,5,Standard,4,21978,6/10/2026,8,3926,224,6.81
+Bangalore,MG Road,Elite MG Road Residency,5,Standard,2,21060,8/19/2026,7.9,3477,226,0.14
+Bangalore,MG Road,Golden MG Road Inn,3,Standard,3,3718,5/9/2026,9.1,2126,219,0.18
+Bangalore,Arekere,Golden Arekere Heights,5,Suite,3,22577,7/31/2026,9.1,4791,607,18.58
+Bangalore,Whitefield,Royal Whitefield Palace,3,Deluxe,4,3456,6/2/2026,9.3,1001,332,3.47
+Bangalore,MG Road,Comfort MG Road Retreat,4,Deluxe,1,9055,7/9/2026,9,3850,369,0.81
+Bangalore,Arekere,Plaza Arekere Retreat,4,Deluxe,1,8782,6/14/2026,8.3,3398,389,9.21
+Bangalore,Whitefield,Plaza Whitefield Stay,5,Suite,2,12193,6/29/2026,9,552,685,17.31
+Bangalore,Whitefield,Skyline Whitefield Residency,3,Deluxe,2,3582,7/6/2026,9.2,628,341,18.81
+Bangalore,Whitefield,Plaza Whitefield Suites,3,Deluxe,1,4537,5/12/2026,8.3,3316,371,19.54
+Bangalore,Whitefield,Emerald Whitefield Suites,3,Standard,1,2711,6/22/2026,8.7,1651,262,3.85
+Bangalore,MG Road,Emerald MG Road Inn,3,Deluxe,4,3863,5/19/2026,8.2,2777,322,0.75
+Bangalore,MG Road,Golden MG Road Stay,4,Standard,1,9473,5/27/2026,7.7,2829,221,0.76
+Bangalore,Whitefield,Royal Whitefield Inn,3,Deluxe,4,4959,7/26/2026,8.7,4874,349,2.97
+Bangalore,Rajajinagar,Royal Rajajinagar Palace,3,Standard,3,4570,8/17/2026,8.5,4746,225,15.58
+Bangalore,MG Road,Skyline MG Road Palace,5,Deluxe,3,22816,7/19/2026,8.4,703,359,1.49
+Bangalore,MG Road,Comfort MG Road Stay,4,Deluxe,3,5939,7/20/2026,8.2,1066,318,0.22
+Bangalore,Rajajinagar,Emerald Rajajinagar Heights,4,Suite,3,8058,6/22/2026,9.2,348,649,2.04
+Bangalore,MG Road,Silver MG Road Lodge,5,Standard,3,13691,6/23/2026,7.7,2913,297,1.41
+Bangalore,MG Road,Comfort MG Road Lodge,3,Suite,1,3240,8/8/2026,8.3,2722,537,0.38
+Bangalore,Rajajinagar,Grand Rajajinagar Inn,5,Standard,2,20710,5/25/2026,8.7,3111,261,15.76
+Bangalore,Rajajinagar,Skyline Rajajinagar Palace,3,Deluxe,1,3925,8/23/2026,8.2,3115,368,11.8
+Bangalore,Rajajinagar,Emerald Rajajinagar Residency,4,Suite,2,6653,7/12/2026,8.9,2469,632,10.9
+Bangalore,MG Road,Emerald MG Road Stay,3,Standard,4,3883,7/7/2026,8.3,643,259,0.76
+Bangalore,Whitefield,Grand Whitefield Retreat,4,Suite,2,8572,8/14/2026,9.2,1497,498,4.4
+Bangalore,Arekere,Grand Arekere Retreat,4,Suite,4,8556,7/28/2026,8.1,622,571,5.72
+Bangalore,Arekere,Skyline Arekere Heights,4,Suite,1,5743,7/28/2026,8.6,3427,595,15.84
+Bangalore,Whitefield,Golden Whitefield Inn,4,Deluxe,1,5714,5/4/2026,8.6,4850,327,11.9
+Bangalore,Whitefield,Comfort Whitefield Retreat,3,Standard,3,3183,5/25/2026,8.5,1672,300,17.9
+Bangalore,MG Road,Royal MG Road Residency,5,Suite,3,11834,6/21/2026,8.8,180,514,0.94
+Bangalore,MG Road,Comfort MG Road Lodge,4,Standard,4,7970,6/23/2026,9.1,2997,288,1.49
+Bangalore,Whitefield,Comfort Whitefield Palace,3,Suite,2,3635,6/28/2026,7.5,746,498,4.46
+Bangalore,Rajajinagar,Royal Rajajinagar Retreat,3,Deluxe,4,2884,6/28/2026,9.5,4801,321,3.09
+Bangalore,Arekere,Plaza Arekere Suites,4,Standard,2,9392,7/9/2026,8.1,463,215,8.28
+Bangalore,MG Road,Skyline MG Road Palace,5,Deluxe,4,20597,7/22/2026,7.6,2493,375,0.48
+Bangalore,Arekere,Silver Arekere Residency,3,Suite,1,3463,5/27/2026,9.1,782,462,8.58
+Bangalore,Whitefield,Elite Whitefield Residency,5,Standard,2,22181,5/1/2026,8.1,911,266,8.72
+Bangalore,Whitefield,Urban Whitefield Suites,3,Deluxe,4,3255,6/17/2026,9.4,5847,333,14.11
+Bangalore,Whitefield,Emerald Whitefield Suites,5,Deluxe,3,17105,8/23/2026,7.5,2114,303,2.34
+Bangalore,MG Road,Elite MG Road Heights,4,Suite,2,5095,8/5/2026,9.5,5854,568,0.76
+Bangalore,Arekere,Royal Arekere Inn,5,Suite,3,15471,7/12/2026,7.9,4802,451,5.39
+Bangalore,Whitefield,Royal Whitefield Suites,4,Suite,4,9715,7/7/2026,8.9,1441,667,18.9
+Bangalore,Arekere,Golden Arekere Retreat,5,Standard,1,12689,7/9/2026,7.7,139,270,6.08
+Bangalore,Rajajinagar,Urban Rajajinagar Lodge,3,Suite,2,3711,7/18/2026,7.9,1733,445,17.27
+Bangalore,MG Road,Urban MG Road Palace,3,Deluxe,2,4522,5/22/2026,9.5,1039,346,0.44
+Bangalore,MG Road,Grand MG Road Retreat,5,Standard,2,10351,7/4/2026,8.5,1804,245,0.94
+Bangalore,Arekere,Royal Arekere Retreat,3,Suite,2,3412,8/9/2026,8.7,2626,484,11.05
+Bangalore,MG Road,Royal MG Road Heights,3,Deluxe,2,4945,7/26/2026,9,1348,397,0.11
+Bangalore,Rajajinagar,Silver Rajajinagar Palace,5,Suite,1,13245,5/10/2026,8.2,211,658,6.93
+Bangalore,Rajajinagar,Grand Rajajinagar Stay,5,Deluxe,3,12495,7/13/2026,8,2943,360,17.1
+Bangalore,Arekere,Urban Arekere Palace,5,Suite,1,20142,5/3/2026,8.1,2836,505,6.58
+Bangalore,Arekere,Emerald Arekere Residency,5,Deluxe,4,10256,5/3/2026,8.1,3590,329,13.42
+Bangalore,MG Road,Comfort MG Road Residency,5,Deluxe,4,22001,5/23/2026,8.1,1309,317,0.32
+Bangalore,Whitefield,Elite Whitefield Suites,5,Suite,2,25349,5/2/2026,8.5,4695,677,5.89
+Bangalore,Arekere,Emerald Arekere Inn,3,Suite,1,2983,8/4/2026,7.5,5111,556,5.76
+Bangalore,Whitefield,Comfort Whitefield Heights,3,Deluxe,3,2579,7/4/2026,8.8,5442,330,3.19
+Bangalore,MG Road,Skyline MG Road Lodge,4,Deluxe,4,9488,5/5/2026,7.8,5200,386,0.75
+Bangalore,Whitefield,Emerald Whitefield Residency,4,Deluxe,1,7734,5/4/2026,8.9,5054,394,14.84
+Bangalore,MG Road,Golden MG Road Suites,4,Suite,1,6960,8/5/2026,9,5240,513,1.19
+Bangalore,Rajajinagar,Emerald Rajajinagar Retreat,3,Suite,3,4180,7/6/2026,7.6,4607,511,12.36
+Bangalore,Arekere,Skyline Arekere Suites,5,Suite,3,14274,7/4/2026,9.3,4235,535,2.44
+Bangalore,Whitefield,Silver Whitefield Inn,4,Deluxe,1,7415,7/14/2026,8.4,779,358,16.14
+Bangalore,MG Road,Silver MG Road Stay,5,Standard,4,17427,6/9/2026,8.7,3098,236,1.39
+Bangalore,MG Road,Plaza MG Road Suites,5,Deluxe,4,24369,5/21/2026,7.6,2985,379,0.78
+Bangalore,Rajajinagar,Grand Rajajinagar Inn,5,Standard,4,21759,6/19/2026,9.3,5231,242,5.89
+Bangalore,MG Road,Elite MG Road Residency,4,Suite,1,6035,7/29/2026,8.5,5278,636,0.64
+Bangalore,Arekere,Skyline Arekere Stay,5,Deluxe,1,13011,6/17/2026,9.1,397,315,4.61
+Bangalore,MG Road,Comfort MG Road Retreat,4,Deluxe,2,8369,6/23/2026,8.5,5960,313,0.55
+Bangalore,Arekere,Royal Arekere Heights,3,Deluxe,4,2916,6/9/2026,7.6,1700,361,14.28
+Bangalore,Whitefield,Royal Whitefield Inn,3,Deluxe,2,3964,5/11/2026,8.3,1336,359,4.05
+Bangalore,Rajajinagar,Plaza Rajajinagar Heights,5,Standard,1,11808,5/13/2026,8.6,5190,232,14.51
+Bangalore,Rajajinagar,Royal Rajajinagar Suites,5,Suite,3,14723,6/15/2026,8.2,4605,443,10.05
+Bangalore,Arekere,Grand Arekere Stay,4,Standard,4,7419,8/8/2026,8.5,3038,299,3.37
+Bangalore,Rajajinagar,Urban Rajajinagar Retreat,5,Standard,2,13337,6/24/2026,8.1,1674,242,8.88
+Bangalore,Arekere,Urban Arekere Residency,4,Standard,4,6544,6/29/2026,8.2,740,234,10.7
+Bangalore,Arekere,Royal Arekere Retreat,4,Deluxe,1,6214,8/3/2026,8.8,2286,321,17.04
+Bangalore,Rajajinagar,Emerald Rajajinagar Lodge,4,Standard,4,8242,5/25/2026,8.6,5795,280,6.99
+Bangalore,MG Road,Elite MG Road Residency,5,Deluxe,1,11703,8/22/2026,8.7,2346,385,0.47
+Bangalore,Rajajinagar,Emerald Rajajinagar Suites,5,Deluxe,3,13830,5/8/2026,7.9,2920,358,16.54
+Bangalore,Arekere,Emerald Arekere Residency,4,Suite,1,5342,5/10/2026,8,3469,666,17.16
+Bangalore,Arekere,Urban Arekere Lodge,4,Suite,4,5059,5/29/2026,8.5,5834,688,11.96
+Bangalore,Arekere,Urban Arekere Suites,4,Standard,2,7725,7/3/2026,8.3,3781,227,18.77
+Bangalore,MG Road,Grand MG Road Suites,5,Deluxe,1,23836,7/3/2026,8.5,1314,359,0.93
+Bangalore,MG Road,Plaza MG Road Lodge,3,Deluxe,3,3002,6/18/2026,7.9,3012,301,0.64
+Bangalore,MG Road,Emerald MG Road Inn,4,Suite,2,6919,7/31/2026,8.6,5341,534,1.41
+Bangalore,Rajajinagar,Urban Rajajinagar Palace,3,Deluxe,2,3159,5/27/2026,9.1,3953,362,14.9
+Bangalore,MG Road,Emerald MG Road Inn,5,Suite,1,18080,7/26/2026,7.9,4702,526,1.33
+Bangalore,Rajajinagar,Royal Rajajinagar Suites,3,Suite,4,3601,5/29/2026,8.6,5486,633,10.03
+Bangalore,Arekere,Emerald Arekere Heights,5,Standard,1,16618,8/30/2026,7.6,4874,280,4.1
+Bangalore,MG Road,Golden MG Road Palace,5,Deluxe,1,15496,5/30/2026,7.9,5232,400,0.75
+Bangalore,Arekere,Skyline Arekere Stay,3,Deluxe,1,3653,8/10/2026,8,2901,311,6.3
+Bangalore,Whitefield,Silver Whitefield Stay,4,Deluxe,1,8819,6/19/2026,9.4,5590,337,17.82
+Bangalore,Whitefield,Elite Whitefield Retreat,5,Standard,1,23994,7/15/2026,8.4,774,298,4.67
+Bangalore,MG Road,Golden MG Road Retreat,3,Deluxe,1,4335,7/24/2026,8.1,1737,377,0.76
+Bangalore,Arekere,Golden Arekere Lodge,5,Standard,2,22824,8/25/2026,8.7,3241,247,19.25
+Bangalore,Arekere,Plaza Arekere Stay,3,Standard,4,3064,5/17/2026,8.3,2711,271,9.06
+Bangalore,Arekere,Emerald Arekere Palace,4,Suite,4,6548,5/8/2026,9.4,4041,531,6.82
+Bangalore,Whitefield,Skyline Whitefield Lodge,4,Deluxe,1,7303,6/11/2026,7.7,2326,373,19.42
+Bangalore,Rajajinagar,Emerald Rajajinagar Stay,5,Deluxe,3,24172,8/22/2026,8.4,5465,358,16.01
+Bangalore,Rajajinagar,Elite Rajajinagar Palace,5,Suite,3,23279,8/22/2026,8,4958,494,12.23
+Bangalore,MG Road,Skyline MG Road Retreat,5,Standard,2,20774,6/24/2026,9.3,5906,226,0.04
+Bangalore,Rajajinagar,Elite Rajajinagar Lodge,3,Deluxe,4,3117,6/13/2026,8.1,4874,372,8.06
+Bangalore,MG Road,Grand MG Road Residency,5,Deluxe,1,25172,8/22/2026,7.5,1284,325,1.03
+Bangalore,MG Road,Golden MG Road Lodge,5,Deluxe,3,17970,8/27/2026,8,345,374,0.42
+Bangalore,MG Road,Grand MG Road Palace,3,Standard,3,3550,5/19/2026,9.2,1777,235,0.27
+Bangalore,Rajajinagar,Comfort Rajajinagar Retreat,4,Suite,4,9781,6/18/2026,9.3,212,515,2.23
+Bangalore,MG Road,Golden MG Road Lodge,3,Standard,1,4002,8/25/2026,8.3,3831,213,1.18
+Bangalore,MG Road,Golden MG Road Heights,3,Suite,1,4277,7/31/2026,8.7,2085,449,0.23
+Bangalore,Rajajinagar,Elite Rajajinagar Heights,4,Suite,4,7298,5/23/2026,9.5,4529,670,16.97
+Bangalore,Arekere,Silver Arekere Palace,3,Suite,1,4594,8/26/2026,7.7,5632,407,15.32
+Bangalore,MG Road,Elite MG Road Residency,5,Standard,1,14744,7/8/2026,8.1,717,209,0.65
+Bangalore,Arekere,Urban Arekere Residency,3,Standard,2,3980,7/24/2026,7.6,4951,237,14.51
+Bangalore,Whitefield,Grand Whitefield Inn,3,Suite,4,4048,8/8/2026,7.8,4964,691,12.72
+Bangalore,Whitefield,Urban Whitefield Retreat,5,Suite,3,11323,6/7/2026,7.7,3059,470,10.32
+Bangalore,Rajajinagar,Royal Rajajinagar Heights,4,Suite,3,9202,6/24/2026,9,5293,499,12.29
+Bangalore,Rajajinagar,Golden Rajajinagar Suites,5,Standard,4,24503,8/6/2026,7.8,3526,262,10.91
+Bangalore,Rajajinagar,Elite Rajajinagar Suites,5,Deluxe,2,13415,5/18/2026,9.4,3039,306,2.93
+Bangalore,Whitefield,Comfort Whitefield Suites,5,Suite,4,14336,5/3/2026,9.5,2579,624,2.59
+Bangalore,Rajajinagar,Skyline Rajajinagar Heights,4,Suite,3,5196,6/3/2026,9.3,5271,487,11.23
+Bangalore,Arekere,Silver Arekere Lodge,5,Standard,2,25916,7/28/2026,7.8,2342,237,4.59
+Bangalore,Rajajinagar,Royal Rajajinagar Lodge,5,Standard,2,15015,8/7/2026,8.5,4504,299,8.08
+Bangalore,Arekere,Grand Arekere Suites,4,Standard,4,5354,7/15/2026,7.5,4795,240,8.94
+Bangalore,Arekere,Comfort Arekere Inn,4,Deluxe,4,8865,8/29/2026,9,2536,372,11.65
+Bangalore,Rajajinagar,Plaza Rajajinagar Suites,4,Suite,3,5347,5/8/2026,7.6,3328,468,15.63
+Bangalore,MG Road,Golden MG Road Stay,4,Deluxe,3,5706,5/28/2026,8.3,144,382,1.11
+Bangalore,Arekere,Silver Arekere Residency,5,Suite,3,24636,6/23/2026,8.3,5633,591,9.06
+Bangalore,Whitefield,Comfort Whitefield Palace,3,Suite,4,4693,8/22/2026,8.6,1465,674,19.28
+Bangalore,Arekere,Urban Arekere Inn,3,Standard,3,3268,6/3/2026,8.8,2622,274,16.53
+Bangalore,Rajajinagar,Golden Rajajinagar Palace,5,Standard,4,12738,7/26/2026,8.9,4224,253,7.12
+Bangalore,Rajajinagar,Plaza Rajajinagar Suites,5,Deluxe,1,23720,7/9/2026,7.9,2459,313,3.55
+Bangalore,MG Road,Emerald MG Road Palace,5,Deluxe,1,16029,5/22/2026,8.4,908,390,1.4
+Bangalore,Whitefield,Grand Whitefield Heights,4,Suite,4,6333,6/19/2026,8.7,1793,489,9.63
+Bangalore,Whitefield,Silver Whitefield Lodge,5,Deluxe,3,23409,8/2/2026,9.2,1444,327,19.63
+Bangalore,Rajajinagar,Urban Rajajinagar Inn,4,Deluxe,2,8483,7/29/2026,7.5,4764,332,7.48
+Bangalore,Whitefield,Silver Whitefield Palace,5,Deluxe,3,22870,7/26/2026,9.2,5108,349,13.26
+Bangalore,Rajajinagar,Royal Rajajinagar Stay,3,Suite,2,2796,7/26/2026,8.6,3490,425,14.35
+Bangalore,Rajajinagar,Plaza Rajajinagar Heights,3,Standard,2,4793,8/17/2026,9.1,4780,281,16.35
+Bangalore,MG Road,Silver MG Road Inn,5,Suite,4,22209,5/3/2026,9.2,1529,563,0.43
+Bangalore,Rajajinagar,Silver Rajajinagar Stay,5,Suite,4,16439,8/22/2026,8.6,5923,638,12.02
+Bangalore,Rajajinagar,Comfort Rajajinagar Stay,4,Suite,4,7759,6/19/2026,8.4,5999,538,12.79
+Bangalore,Arekere,Urban Arekere Inn,5,Standard,2,23090,6/17/2026,8.6,1155,227,6.48
+Bangalore,MG Road,Royal MG Road Heights,4,Suite,2,9473,7/28/2026,9.1,1779,431,0.09
+Bangalore,MG Road,Royal MG Road Stay,3,Deluxe,4,3322,6/20/2026,8.3,3612,358,0.78
+Bangalore,Arekere,Skyline Arekere Lodge,3,Deluxe,4,2606,5/12/2026,8.4,290,315,15.65
+Bangalore,Arekere,Grand Arekere Suites,3,Suite,3,4905,5/5/2026,8.6,1108,552,10.87
+Bangalore,Arekere,Urban Arekere Residency,3,Suite,2,3172,6/13/2026,7.7,4977,610,7.86
+Bangalore,Arekere,Emerald Arekere Residency,3,Standard,4,4532,5/19/2026,8.7,4363,205,16.52
+Bangalore,MG Road,Skyline MG Road Heights,5,Standard,1,23687,7/11/2026,8.8,5096,200,0.1
+Bangalore,MG Road,Comfort MG Road Suites,5,Suite,1,13322,6/23/2026,8.6,2641,421,0.56
+Bangalore,Arekere,Emerald Arekere Heights,4,Standard,2,6806,7/13/2026,8.9,2445,203,19.71
+Bangalore,Rajajinagar,Skyline Rajajinagar Stay,3,Standard,3,3860,7/7/2026,7.7,2816,287,3.29
+Bangalore,Whitefield,Silver Whitefield Residency,5,Suite,4,13535,5/22/2026,7.6,167,479,12.55
+Bangalore,Whitefield,Plaza Whitefield Suites,4,Suite,2,6852,8/29/2026,8,1135,679,3.88
+Bangalore,Whitefield,Elite Whitefield Palace,3,Standard,1,4327,5/17/2026,9,5987,239,16.22
+Bangalore,Rajajinagar,Golden Rajajinagar Retreat,4,Deluxe,3,8198,6/4/2026,7.9,831,323,12.22
+Bangalore,MG Road,Elite MG Road Palace,4,Suite,1,9079,5/15/2026,9.4,4938,659,1.21
+Bangalore,Whitefield,Royal Whitefield Suites,4,Standard,3,6670,5/4/2026,7.7,4957,269,14.86
+Bangalore,Whitefield,Comfort Whitefield Heights,5,Suite,1,21088,6/23/2026,7.9,3170,401,2.51
+Bangalore,Whitefield,Silver Whitefield Suites,5,Standard,3,17727,7/4/2026,7.8,5366,284,10.63
+Bangalore,MG Road,Plaza MG Road Suites,4,Suite,2,7753,5/7/2026,8.7,3871,481,1.43
+Bangalore,MG Road,Urban MG Road Residency,4,Deluxe,1,9952,5/9/2026,7.6,3935,374,0.75
+Bangalore,MG Road,Elite MG Road Stay,5,Deluxe,3,18724,5/12/2026,8.3,4928,326,1.11
+Bangalore,MG Road,Elite MG Road Retreat,4,Suite,1,7669,7/25/2026,8.3,3493,648,0.72
+Bangalore,MG Road,Skyline MG Road Lodge,3,Suite,4,2863,8/29/2026,9.1,3484,502,1.48
+Bangalore,MG Road,Comfort MG Road Heights,5,Deluxe,1,11882,7/22/2026,7.8,2598,355,0.94
+Bangalore,Rajajinagar,Plaza Rajajinagar Inn,4,Deluxe,4,6884,8/2/2026,8.4,178,330,4.8
+Bangalore,MG Road,Silver MG Road Residency,5,Standard,1,17062,7/10/2026,7.5,3731,297,1.46
+Bangalore,MG Road,Skyline MG Road Lodge,3,Deluxe,2,3694,8/2/2026,8.6,1048,371,1.48
+Bangalore,Rajajinagar,Plaza Rajajinagar Stay,5,Deluxe,4,12768,7/27/2026,9.4,2168,394,6.47
+Bangalore,MG Road,Royal MG Road Retreat,4,Deluxe,2,6308,5/20/2026,9.3,1789,367,0.68
+Bangalore,Arekere,Urban Arekere Lodge,3,Suite,3,3917,6/14/2026,8.2,1324,584,7.37
+Bangalore,MG Road,Skyline MG Road Stay,3,Deluxe,4,2520,7/6/2026,7.6,4704,335,0.14
+Bangalore,MG Road,Urban MG Road Palace,5,Standard,1,13108,7/7/2026,8.6,3726,273,0.15
+Bangalore,Rajajinagar,Skyline Rajajinagar Lodge,4,Deluxe,1,8484,5/26/2026,7.5,149,323,3.09
+Bangalore,Rajajinagar,Grand Rajajinagar Heights,5,Suite,1,24409,5/16/2026,8,1379,515,12.54
+Bangalore,Whitefield,Emerald Whitefield Retreat,5,Suite,3,13211,6/13/2026,9.1,5549,635,3.41
+Bangalore,MG Road,Royal MG Road Suites,3,Deluxe,1,4264,6/25/2026,8.8,4252,343,1.23
+Bangalore,Whitefield,Comfort Whitefield Inn,5,Suite,1,19553,8/10/2026,8.8,184,610,2.12
+Bangalore,MG Road,Plaza MG Road Suites,3,Deluxe,2,4858,5/14/2026,9,1592,335,1.42
+Bangalore,Rajajinagar,Comfort Rajajinagar Suites,5,Deluxe,3,10718,5/14/2026,9.4,4753,355,17.43
+Bangalore,MG Road,Urban MG Road Palace,3,Deluxe,1,3792,7/9/2026,8.1,3922,303,1.28
+Bangalore,MG Road,Royal MG Road Inn,4,Standard,4,9864,8/16/2026,9,2547,246,0.09
+Bangalore,Arekere,Emerald Arekere Lodge,5,Suite,2,19311,8/1/2026,8.9,4537,576,10.1
+Bangalore,MG Road,Urban MG Road Suites,4,Deluxe,3,7820,8/13/2026,8.9,3338,351,1.35
+Bangalore,Rajajinagar,Grand Rajajinagar Palace,5,Standard,1,11901,6/26/2026,7.9,5125,274,4.49
+Bangalore,Arekere,Comfort Arekere Residency,4,Standard,3,6673,8/17/2026,8.8,4916,278,5.34
+Bangalore,Whitefield,Silver Whitefield Suites,5,Suite,3,15726,5/8/2026,7.5,2992,623,17.49
+Bangalore,Rajajinagar,Plaza Rajajinagar Palace,3,Deluxe,4,3065,6/22/2026,9.1,4128,334,17.79
+Bangalore,MG Road,Emerald MG Road Residency,4,Standard,2,7957,6/18/2026,8.2,4150,236,0.42
+Bangalore,Whitefield,Comfort Whitefield Heights,3,Suite,1,4184,7/1/2026,8.3,783,530,9.6
+Bangalore,Rajajinagar,Urban Rajajinagar Suites,3,Standard,4,2744,5/13/2026,7.6,1377,235,8.89
+Bangalore,Arekere,Emerald Arekere Retreat,5,Standard,2,21324,7/15/2026,9.1,220,229,11.78
+Bangalore,Arekere,Urban Arekere Stay,4,Suite,3,6195,7/21/2026,8.8,3547,666,4.62
+Bangalore,Whitefield,Comfort Whitefield Retreat,4,Deluxe,1,9383,7/29/2026,8,2526,366,4.7
+Bangalore,Whitefield,Comfort Whitefield Lodge,4,Suite,2,8762,5/3/2026,7.9,3877,453,11.8
+Bangalore,MG Road,Skyline MG Road Palace,3,Standard,4,2571,7/1/2026,8.3,1286,280,0.81
+Bangalore,Arekere,Golden Arekere Inn,5,Deluxe,3,10527,6/2/2026,9.2,4641,382,4.22
+Bangalore,Arekere,Skyline Arekere Residency,5,Suite,3,12668,7/25/2026,9,1683,609,9.21
+Bangalore,Whitefield,Plaza Whitefield Palace,3,Deluxe,1,3601,8/31/2026,8.9,613,378,3.13
+Bangalore,MG Road,Urban MG Road Inn,4,Standard,2,9410,5/5/2026,8.7,3091,291,0.37
+Bangalore,Whitefield,Skyline Whitefield Lodge,5,Suite,3,16080,6/19/2026,9,2617,543,18.87
+Bangalore,MG Road,Golden MG Road Residency,5,Standard,2,15142,8/17/2026,9.2,4108,218,0.83
+Bangalore,Arekere,Skyline Arekere Residency,3,Standard,3,3449,8/20/2026,9.1,3002,265,16.74
+Bangalore,Whitefield,Silver Whitefield Suites,4,Standard,4,7478,6/18/2026,8.1,2581,224,17.52
+Bangalore,MG Road,Elite MG Road Retreat,3,Standard,2,4265,7/21/2026,8.8,4677,233,1.47
+Bangalore,Rajajinagar,Grand Rajajinagar Residency,4,Suite,2,9609,6/19/2026,8.2,1197,458,3.96
+Bangalore,Whitefield,Emerald Whitefield Inn,3,Deluxe,3,4706,8/1/2026,8.1,4446,307,7.76
+Bangalore,Whitefield,Emerald Whitefield Heights,4,Suite,1,5670,8/27/2026,8.9,4992,602,6.82
+Bangalore,MG Road,Emerald MG Road Heights,3,Standard,2,4528,7/24/2026,8,1774,227,1.21
+Bangalore,MG Road,Golden MG Road Stay,4,Standard,4,6046,7/28/2026,7.9,226,204,1.17
+Bangalore,MG Road,Grand MG Road Suites,3,Suite,4,4893,6/25/2026,9.4,3599,525,1.38
+Bangalore,Whitefield,Comfort Whitefield Heights,4,Standard,1,9256,8/22/2026,8.6,1705,249,19.88
+Bangalore,Whitefield,Golden Whitefield Lodge,3,Deluxe,3,4946,5/17/2026,7.8,4996,380,4.81
+Bangalore,Whitefield,Skyline Whitefield Palace,4,Deluxe,3,9782,6/17/2026,8.7,456,347,7.93
+Bangalore,MG Road,Emerald MG Road Suites,3,Suite,3,4929,8/20/2026,9.1,4149,688,0.69
+Bangalore,Whitefield,Golden Whitefield Heights,3,Standard,2,4221,8/23/2026,9.2,1263,258,12.09
+Bangalore,Arekere,Elite Arekere Lodge,3,Suite,2,4381,7/22/2026,8.6,5202,688,19.49
+Bangalore,MG Road,Emerald MG Road Palace,4,Deluxe,1,9328,6/14/2026,7.7,3529,362,0.85
+Bangalore,Rajajinagar,Silver Rajajinagar Lodge,3,Deluxe,4,3018,8/13/2026,8.9,1289,352,10.59
+Bangalore,Rajajinagar,Golden Rajajinagar Inn,4,Standard,2,7715,6/20/2026,9.1,3632,282,18.45
+Bangalore,Rajajinagar,Urban Rajajinagar Inn,3,Deluxe,1,2952,8/15/2026,8.7,3233,335,19.37
+Bangalore,Rajajinagar,Elite Rajajinagar Palace,3,Deluxe,2,4029,7/10/2026,9.2,3346,362,3.91
+Bangalore,Rajajinagar,Golden Rajajinagar Stay,4,Standard,2,6393,5/3/2026,8.4,5609,220,2.63
+Bangalore,Arekere,Royal Arekere Residency,3,Suite,1,3204,7/28/2026,8.6,1947,437,2.6
+Bangalore,MG Road,Plaza MG Road Inn,5,Standard,3,25635,7/17/2026,8.3,2352,269,1.35
+Bangalore,Arekere,Golden Arekere Stay,4,Deluxe,4,6409,7/9/2026,8.2,3539,354,17.1
+Bangalore,Rajajinagar,Emerald Rajajinagar Palace,5,Suite,3,19531,6/11/2026,8.4,5058,645,9.84
+Bangalore,MG Road,Urban MG Road Inn,5,Suite,4,20139,8/18/2026,9.5,1800,470,1.46
+Bangalore,MG Road,Urban MG Road Heights,3,Standard,1,3335,5/11/2026,8.7,3335,244,0.78
+Bangalore,MG Road,Skyline MG Road Lodge,5,Suite,1,15621,6/19/2026,9.2,837,537,0.21
+Bangalore,Rajajinagar,Plaza Rajajinagar Residency,5,Standard,4,21375,7/5/2026,7.9,4996,232,17.35
+Bangalore,Whitefield,Plaza Whitefield Lodge,3,Standard,4,3354,7/17/2026,8.4,4083,225,19.47
+Bangalore,Rajajinagar,Emerald Rajajinagar Retreat,4,Deluxe,3,9113,8/5/2026,8.8,846,323,17.29
+Bangalore,Arekere,Golden Arekere Inn,3,Standard,2,2854,6/10/2026,9.2,5010,293,15.36
+Bangalore,Whitefield,Golden Whitefield Suites,5,Deluxe,1,24792,5/17/2026,8.3,4091,332,4.2
+Bangalore,Rajajinagar,Skyline Rajajinagar Retreat,3,Deluxe,2,4421,8/23/2026,7.9,738,336,9.82
+Bangalore,Arekere,Silver Arekere Suites,3,Deluxe,3,3846,6/3/2026,9.4,4265,374,19.73
+Bangalore,MG Road,Grand MG Road Residency,5,Suite,2,22305,6/10/2026,8.4,3130,651,0.7
+Bangalore,MG Road,Comfort MG Road Palace,3,Suite,3,4201,5/27/2026,8,5988,472,1.2
+Bangalore,Whitefield,Royal Whitefield Palace,5,Deluxe,3,21945,8/10/2026,9.3,1088,353,15.01
+Bangalore,Rajajinagar,Plaza Rajajinagar Stay,3,Standard,2,4474,5/4/2026,8.4,2386,295,8.31
+Bangalore,Whitefield,Comfort Whitefield Lodge,4,Standard,2,5337,6/5/2026,8.7,3708,222,16.19
+Bangalore,Rajajinagar,Royal Rajajinagar Inn,4,Deluxe,2,6967,7/30/2026,8.1,4689,363,11.52
+Bangalore,MG Road,Elite MG Road Palace,5,Suite,1,18910,5/26/2026,8.6,2645,523,1.12
+Bangalore,Whitefield,Comfort Whitefield Inn,5,Standard,4,13620,5/14/2026,8.8,2542,289,4.71
+Bangalore,Arekere,Elite Arekere Lodge,5,Deluxe,4,25828,5/30/2026,8.1,3176,366,11.64
+Bangalore,Arekere,Royal Arekere Lodge,5,Standard,4,19327,5/26/2026,8.4,3650,298,3.19
+Bangalore,Whitefield,Golden Whitefield Inn,3,Deluxe,2,4216,6/19/2026,8.9,5599,319,3.93
+Bangalore,Arekere,Emerald Arekere Stay,5,Suite,1,22666,6/26/2026,7.8,2995,538,10.61
+Bangalore,Arekere,Golden Arekere Suites,3,Standard,1,3720,5/12/2026,8.6,235,277,6.18
+Bangalore,Rajajinagar,Royal Rajajinagar Inn,5,Suite,3,18325,7/7/2026,9.1,3402,467,19.71
+Bangalore,Whitefield,Comfort Whitefield Heights,5,Suite,2,13561,7/5/2026,8,193,466,19.64
+Bangalore,Whitefield,Elite Whitefield Retreat,4,Deluxe,2,8689,5/18/2026,7.9,5887,364,16.47
+Bangalore,Arekere,Silver Arekere Stay,5,Suite,3,15285,7/17/2026,8.9,458,449,17.16
+Bangalore,MG Road,Plaza MG Road Inn,5,Suite,2,19750,8/14/2026,9.1,5511,436,1.23
+Bangalore,MG Road,Elite MG Road Retreat,5,Deluxe,1,10059,7/31/2026,8.2,977,398,1.03
+Bangalore,MG Road,Comfort MG Road Palace,3,Deluxe,1,2595,5/5/2026,8.9,4768,356,0.45
+Bangalore,Rajajinagar,Urban Rajajinagar Residency,4,Standard,1,7018,6/15/2026,9,5802,262,19.17
+Bangalore,MG Road,Silver MG Road Inn,5,Deluxe,1,17509,7/9/2026,9.3,3756,367,0.05
+Bangalore,MG Road,Elite MG Road Stay,3,Deluxe,1,2564,6/22/2026,8.5,5940,397,0.99
+Bangalore,Arekere,Comfort Arekere Suites,5,Deluxe,1,10917,5/24/2026,8.7,1708,336,17.67
+Bangalore,MG Road,Comfort MG Road Residency,4,Suite,3,9200,7/14/2026,7.6,2822,498,0.83
+Bangalore,MG Road,Urban MG Road Suites,4,Deluxe,1,8103,7/7/2026,8.7,4196,394,0.58
+Bangalore,Arekere,Royal Arekere Stay,4,Deluxe,1,5985,7/2/2026,8.8,4634,309,19.36
+Bangalore,MG Road,Golden MG Road Residency,4,Suite,3,6580,7/2/2026,9.3,5737,416,0.57
+Bangalore,Whitefield,Emerald Whitefield Lodge,3,Standard,2,4517,5/13/2026,9.1,3653,260,8.46
+Bangalore,Arekere,Silver Arekere Suites,3,Deluxe,2,3886,6/1/2026,8.5,5021,327,13.65
+Bangalore,Rajajinagar,Urban Rajajinagar Retreat,4,Suite,1,7475,5/31/2026,7.8,2137,527,6.96
+Bangalore,Rajajinagar,Skyline Rajajinagar Heights,5,Standard,1,11997,5/1/2026,8.7,4878,259,15.2
+Bangalore,Whitefield,Skyline Whitefield Lodge,5,Standard,1,21448,6/6/2026,8,5632,223,7.08
+Bangalore,Whitefield,Skyline Whitefield Palace,5,Deluxe,1,10749,6/1/2026,8.7,1833,373,11
+Bangalore,Whitefield,Emerald Whitefield Palace,4,Suite,2,8323,5/7/2026,9.3,5033,413,15.32
+Bangalore,Rajajinagar,Silver Rajajinagar Palace,3,Suite,4,3775,7/18/2026,7.7,841,458,10.67
+Bangalore,Whitefield,Emerald Whitefield Retreat,3,Suite,2,4362,5/26/2026,9,3033,423,3.43
+Bangalore,MG Road,Royal MG Road Heights,5,Suite,4,20391,8/2/2026,9,3795,610,0.75
+Bangalore,Rajajinagar,Plaza Rajajinagar Retreat,4,Suite,2,8464,5/8/2026,8.8,1370,619,4.5
+Bangalore,Arekere,Silver Arekere Palace,5,Standard,4,14730,6/12/2026,8.3,237,260,13.9
+Bangalore,Rajajinagar,Emerald Rajajinagar Suites,4,Deluxe,4,7171,5/3/2026,8.5,5014,323,5
+Bangalore,Rajajinagar,Elite Rajajinagar Palace,3,Standard,3,3762,7/31/2026,9.1,4415,264,3.57
+Bangalore,MG Road,Skyline MG Road Retreat,5,Suite,4,11296,6/28/2026,8.3,4059,541,0.41
+Bangalore,Rajajinagar,Royal Rajajinagar Heights,4,Deluxe,3,7451,5/9/2026,9,4676,373,6.29
+Bangalore,MG Road,Emerald MG Road Residency,3,Suite,3,4949,8/4/2026,8,4765,540,1.35
+Bangalore,Rajajinagar,Comfort Rajajinagar Residency,3,Standard,2,2978,8/10/2026,8.4,2155,214,8.89
+Bangalore,Rajajinagar,Grand Rajajinagar Heights,5,Standard,2,21220,8/29/2026,8,555,300,2.08
+Bangalore,Arekere,Grand Arekere Inn,4,Suite,4,8909,8/16/2026,8.1,2056,620,7.77
+Bangalore,Whitefield,Royal Whitefield Inn,4,Suite,2,6102,8/6/2026,8.3,3591,590,17.5
+Bangalore,MG Road,Plaza MG Road Retreat,4,Suite,1,8166,5/4/2026,8,1002,421,1.24
+Bangalore,MG Road,Golden MG Road Stay,3,Suite,4,3857,8/1/2026,7.8,1895,523,1.19
+Bangalore,Rajajinagar,Emerald Rajajinagar Lodge,3,Suite,2,4075,6/10/2026,8.2,1074,583,6.17
+Bangalore,Arekere,Silver Arekere Stay,4,Suite,1,6604,5/8/2026,8.8,4482,537,10.34
+Bangalore,MG Road,Silver MG Road Heights,5,Suite,3,13880,5/8/2026,8.4,4556,637,0.85
+Bangalore,Arekere,Silver Arekere Palace,4,Standard,3,8268,6/7/2026,8.9,1638,206,4.87
+Bangalore,Arekere,Grand Arekere Retreat,3,Suite,4,4051,5/4/2026,7.9,3966,654,6.65
+Bangalore,Whitefield,Royal Whitefield Lodge,5,Deluxe,1,23604,5/19/2026,8.3,3640,352,13.83
+Bangalore,Whitefield,Elite Whitefield Heights,3,Deluxe,4,3804,8/22/2026,9.3,1168,372,12.73
+Bangalore,MG Road,Golden MG Road Inn,5,Deluxe,2,15070,8/5/2026,7.8,3693,309,1.47
+Bangalore,Arekere,Urban Arekere Stay,3,Deluxe,3,2949,6/27/2026,8,710,399,12.57
