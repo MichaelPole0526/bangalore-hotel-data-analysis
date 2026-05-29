@@ -26,7 +26,7 @@ The dataset contains 500 hotel listings from Bangalore, India.
 | `room_size_sqft` | Room size measured in square feet |
 | `distance_from_city_center_km` | Distance from the city center in kilometers |
 
-## Dervied Variables## Derived Variables
+## Dervied Variables
 
 To compare hotels more fairly, I created several derived variables from the original dataset. These variables helped standardize different hotel features and build an overall hotel value score.
 
