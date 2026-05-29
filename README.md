@@ -5,7 +5,7 @@ R data analysis project ranking Bangalore hotels by value using hotel scoring, v
 Main goal of this project is to determine which hotels in Bangalore India is the best overall value based on guest rating, review count, price, distance from the city center and room size.
 
 ## Motivation 
-I love traveling and I been to 21 countries plus cool places like Guam and Puerto Rico. Travelers usually care about more than just price.  A good hotel should have good balance between cost, location, reviews, roomsize and overall quality. This projects creates a hotel scoring system to compare hotels more systematically. 
+I love traveling and I been to 21 countries plus cool places like Guam and Puerto Rico. Travelers usually care about more than just price.  A good hotel should have good balance between cost, location, reviews, roomsize and overall quality. This project creates a hotel scoring system to compare hotels more systematically. 
 
 ## Dataset
 The dataset used in this proejct was the Bangalore Hotel Booking Dataset (2026) from Kaggle. 
