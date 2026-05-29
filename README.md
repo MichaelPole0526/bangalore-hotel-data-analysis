@@ -13,15 +13,18 @@ Dataset link: https://www.kaggle.com/datasets/samhoon/bangalore-hotel-booking-da
 The dataset contains 500 hotel listings from Bangalore, India. 
 
 ## Variables
-hotel_name
-area
-star_rating
-room_type 
-price_per_night_inr
-guest_rating
-review_count
-room_size_sqft
-distance_from_city
+
+| Variable | Description |
+|---|---|
+| `hotel_name` | Name of the hotel |
+| `area` | Area or neighborhood of Bangalore where the hotel is located |
+| `star_rating` | Official hotel star rating |
+| `room_type` | Type of room, such as Standard, Deluxe, or Suite |
+| `price_per_night_inr` | Price per night in Indian Rupees |
+| `guest_rating` | Guest rating score for the hotel |
+| `review_count` | Number of guest reviews |
+| `room_size_sqft` | Room size measured in square feet |
+| `distance_from_city_center_km` | Distance from the city center in kilometers |
 
 ## Dervied Variables## Derived Variables
 
