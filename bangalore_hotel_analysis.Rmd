@@ -1,0 +1,495 @@
+---
+title: "Bangalore India Hotel"
+author: "Mikey Pole"
+date: "2026-05-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Main goal of this project is to determine which hotels in Bangalore India is the best overall value based on guest rating, review count, price, distance from the city center and room size. 
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(ggplot2)
+library(broom)
+
+hotels <- read_csv("data/bangalore_hotel_booking_dataset_2026.csv") |>
+  clean_names()
+```
+
+# Factor scores in hotel
+
+```{r}
+hotels_scored <- hotels |>  
+  mutate(
+    rating_score = guest_rating / max(guest_rating, na.rm = TRUE),
+    review_score = log(review_count + 1) / max(log(review_count + 1), na.rm = TRUE),
+    room_size_score = room_size_sqft / max(room_size_sqft, na.rm = TRUE),
+    price_score = 1 - (price_per_night_inr / max(price_per_night_inr, na.rm = TRUE)),
+    distance_score = 1 - (distance_from_city_center_km / max(distance_from_city_center_km, na.rm = TRUE))
+  )
+```
+
+# Construct the hotel score
+
+```{r}
+hotels_scored <- hotels_scored |>
+  mutate(
+    hotel_score =
+      0.20 * rating_score +
+      0.20 * review_score +
+      0.20 * price_score +
+      0.20 * distance_score +
+      0.20 * room_size_score
+  )
+
+# 20 best hotel with the highest hotel score 
+hotels_scored |>
+  arrange(desc(hotel_score)) |>
+  print(n = 20, width = Inf)
+```
+
+# Categorize the Hotel between Best 20 Hotel or not
+
+```{r}
+hotel_group <- hotels_scored |>
+  arrange(desc(hotel_score)) |>
+  mutate(top_20_group = if_else(row_number() <= 20, "Best 20 Hotel Score", "Out of Top 20"), top_20_group = factor(top_20_group, levels = c("Best 20 Hotel Score", "Out of Top 20")))
+
+# 20 Hotels with the best hotel score
+top_20_hotels <- hotel_group |>
+  filter(top_20_group == "Best 20 Hotel Score")
+
+# 480 hotels that isn't in the 20 hotels with the best hotel score
+not_top_20_hotels <- hotel_group |>
+  filter(top_20_group == "Out of Top 20")
+```
+
+# Categorizing hotels between price groups
+
+```{r}
+hotels <- hotels |>
+  mutate(price_groups = if_else(
+    price_per_night_inr > median(price_per_night_inr, na.rm = TRUE),
+    "Expensive Hotel",
+    "Cheap Hotel"))
+```
+
+
+#  Box plot of price group and guest rating & hotel group and guest rating
+
+```{r}
+ggplot(data = hotels, aes(x = price_groups, y = guest_rating, fill = price_groups)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("Cheap Hotel" = "skyblue", "Expensive Hotel" = "orange")) +
+  labs(
+    title = "Guest Ratings: Cheap vs. Expensive Hotels",
+    x = "Price Group",
+    y = "Guest Rating",
+    fill = "Price Group"
+  )
+
+ggplot(data = hotel_group, aes(x = top_20_group, y = guest_rating, fill = top_20_group)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c(
+    "Best 20 Hotel Score" = "red1",
+    "Out of Top 20" = "green2"
+  )) +
+  labs(
+    title = "Guest Rating: Top 20 Hotels vs. Other Hotels",
+    x = "Hotel Score Group",
+    y = "Guest Rating",
+    fill = "Hotel Group"
+  )
+```
+
+# Testing the statstical signifcance in between price groups and average guest rate
+
+```{r}
+t.test(guest_rating ~ price_groups, data = hotels)
+# P-value is 0.5619
+# Confidence Interval  (-0.06774204, 0.12454204)
+```
+
+Null Hypothesis is that cheap hotel group and expensive hotel group have the same average guest rating.
+
+Alternative hypothesis is that cheap hotel group and expensive hotel group have different mean guest ratings.
+
+The average guest rating for cheap hotel group is 8.5060 and the average guest rating for expensive hotel group is 8.4776. 
+
+Since the p-value is 0.5619, which is greater than 0.05, I fail to reject the null hypothesis. There is no strong evidence to conclude that cheap hotel group and expensive hotel group have a statistically significant difference in average guest rating.
+
+I am 95% confident that the true difference in mean guest rating between cheap and expensive hotel group in Bangalore is between -0.0677 and 0.1245. Since this confidence interval includes 0, I can can conclude that the true difference in average guest rating could be 0. Therefore, there is no clear evidence of a difference in average guest rating between cheap and expensive hotel group in Bangalore India
+
+# Testing the statstical signifcance in between hotel group and average guest rate
+
+```{r}
+t.test(guest_rating ~ top_20_group, data = hotel_group)
+# P-value is 1.871e-11
+# Confidence interval (0.5898096, 0.8543571)
+```
+
+Null hypothesis is that the mean guest rating of best 20 hotel group are equal to the mean guest rating of the hotels outside of the top 20 group. 
+
+Alternative hypothesis is that the mean guest rating of the Best 20 Hotel Score group is different from the mean guest rating of the hotels outside of the top 20 group.
+
+The mean guest rating for best 20 hotel score group is 9.185000 and mean guest rating for the out of the top 20 group is 8.462917.  
+
+Since the p-value is 1.871e-11, which is smaller than 0.05. I reject the null hypothesis. There is strong evidence that the best 20 hotel score group and the out of the top 20 group have different average guest ratings
+
+I am 95% confident that the true difference in mean guest rating between the best 20 hotel score group and the out of top 20 group is between  0.5898096 and 0.8543571. Since this doesn't include 0, I can conclude that there is a statically significant different in average guest rating between the two groups. 
+
+# Box plot of hotel group and roomsize & price group and roomsize
+
+```{r}
+ggplot(data = hotels, aes(x = price_groups, y = room_size_sqft, fill = price_groups)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c(
+    "Cheap Hotel" = "skyblue",
+    "Expensive Hotel" = "orange"
+  )) +
+  labs(
+    title = "Room Size: of Cheap vs. Expensive Hotels",
+    x = "Price Group",
+    y = "Room Size (sqft)",
+    fill = "Price Group"
+  )
+
+ggplot(data = hotel_group, aes(x = top_20_group, y = room_size_sqft, fill = top_20_group)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("Best 20 Hotel Score" = "red1", "Out of Top 20" = "green2")) +
+  labs(
+    title = "Room Size: Top 20 Hotels vs. Other Hotels",
+    x = "Hotel Score Group",
+    y = "Room Size (sqft)",
+    fill = "Hotel Group"
+  )
+
+```
+
+# Testing the statstical signifcance in between hotel groups and average room size
+
+```{r}
+t.test(room_size_sqft ~ top_20_group, data = hotel_group)
+# P-value is 0.05069 
+# Confident Interval is (-0.1871681 113.8455014)
+```
+
+Null Hypothesis is that the mean room size of the best 20 hotel group are equal to the mean room size of the hotel outside of the top 20 group.
+
+Alternative hypothesis is that the mean room size of the Best 20 Hotel Score group is different from the mean room size of the hotels outside of the top 20 group.
+
+P-value is 0.05069, since the P-value is greater than 0.05, I fail to reject the null hypothesis. There is no strong evidence to conclude that the best 20 hotel group and the hotels outside of the top 20 group have significantly different average room size. 
+
+I am 95% confident that the true difference in mean room size between the Best 20 Hotel Score group and the out top 20 group is between -0.1871681 sqft and  113.8455014 sqft. Since the confidence interval includes 0, I can conclude that the true difference in average room size could be 0. Therefore there is no statistical evidence of a difference in average room size between the best 20 hotel group and the hotels outside the top 20 in hotels in Bangalore India.  
+
+Although the best 20 hotels had a larger average room size, 443.5 sqft compared to 386.67 sqft, the difference is not statistically significant at the 5% level because the p-value is 0.05069, which is slightly greater than 0.05.
+
+
+# Testing the statstical signifcanceing between price groups and average room size
+
+```{r}
+t.test(room_size_sqft ~ price_groups, data = hotels)
+# P-value is 0.592
+# Confidence Interval (-30.48429,  17.41229)
+```
+
+
+Null hypothesis is that the mean room size of cheap hotel group is equal to the mean room size of expensive hotel group
+
+Alternative hypothesis is that the mean room size of cheap hotel group is different from the mean room size of expensive hotel group
+
+The mean room size for cheap hotel group is 385.676 sqft and the mean room size for expensive hotel group is 392.212 sqft. 
+
+p-value is 0.592. Since the p-value is greater than 0.05, I fail to reject the null hypothesis. There is no strong evidence that the cheap hotel group and expensive hotel group have a statistically significant difference in average room size. 
+
+I am 95% confident that the true difference in mean room size between cheap hotel group and expensive hotel group is between -30.48429 sqft and 17.41229 sqft. Since this interval includes 0, I can conclude that the true difference in average room size can be 0. 
+
+# Box plot of hotel group and distance from city center & price group and disrtance from city center
+
+```{r}
+ggplot(data = hotels, aes(x = price_groups, y = distance_from_city_center_km, fill = price_groups)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c(
+    "Cheap Hotel" = "skyblue",
+    "Expensive Hotel" = "orange"
+  )) +
+  labs(
+    title = "Distance From City Center: Cheap vs. Expensive Hotels",
+    x = "Price Group",
+    y = "Distance From City Center (km)",
+    fill = "Price Group"
+  )
+
+ggplot(data = hotel_group, aes(x = top_20_group, y = distance_from_city_center_km, fill = top_20_group)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("Best 20 Hotel Score" = "red1", "Out of Top 20" = "green2")) +
+  labs(
+    title = "Distance From City Center: Top 20 Hotels vs. Other Hotels",
+    x = "Hotel Score Group",
+    y = "Distance From City Center (km)",
+    fill = "Hotel Group"
+  )
+```
+
+# Testing the statistical significance between hotel groups and distance from city center
+
+```{r}
+t.test(distance_from_city_center_km ~ top_20_group, data = hotel_group)
+# P-value is 0.0002556
+# Confidence Interval (-5.987050, -2.104867)
+```
+
+Null hypothesis is that the mean distance from the city center for the best 20 hotel score group is equal to the mean distance from the city center for the hotels outside of the top 20 group. 
+
+Alternative hypothesis is that the mean distance from the city center for the Best 20 Hotel Score group is different from the mean distance from the city center for the hotels outside of the top 20 group.
+
+The mean distance from the city center for the best 20 hotel score group is 3.835000 km and the mean distance from the city center for hotels outside of the top 20 group is 7.880958 km. 
+
+The p-value is 0.0002556. Since the p-value is less than 0.05, I reject the null hypothesis. Therefore, there is strong evidence that the Best 20 Hotel Score group and the Out of Top 20 group have a statistically significant difference in average distance from the city center.
+
+I am 95% confident that the true difference in mean distance from the city center between the Best 20 Hotel Score group and the Out of Top 20 group is between -5.987050 km and -2.104867 km. Since this confidence interval does not include 0, I can conclude that there is a statistically significant difference in average distance from the city center between the two groups.
+
+Because the confidence interval is negative, this means the Best 20 Hotel Score group is closer to the city center on average than the hotels outside of the top 20 group.
+
+# Testing the statstical significance between price groups and distance form city center
+
+```{r}
+t.test(distance_from_city_center_km ~ price_groups, data = hotels)
+# P-value is 0.04363
+# Confidence Interval (0.03276071, 2.25155929)
+```
+
+Null hypothesis is that the mean distance from the city center for cheap hotel group is equal to the mean distance from the city center for expensive hotel group. 
+
+Alternative hypothesis is that the mean distance from the city center for cheap hotel group is different from the mean distance from the city center for expensive hotel group.
+
+The mean distance from the city center for cheap hotel group is 8.29020 km and the mean distance from the city center for expensive hotel group is 7.14804 km.
+
+The p-value is 0.04363. Since the p-value is less than 0.05, I reject the null hypothesis. There is statistical evidence to conclude that the cheap hotel group and expensive hotel group have statistically significant difference in average distance from the city center. 
+
+I am 95% confident that the true difference in mean distance from the city center between cheap hotel group and expensive hotel group is between 0.03276071 km and 2.25155929 km. Since the confidence interval does not include 0, I can conclude that there is a statistically significant difference in average distance from the city center between the two price group. 
+
+# Box plot of hotel group and star rating & price group and star rating
+
+```{r}
+ggplot(data = hotels, aes(x = price_groups, y = star_rating, fill = price_groups)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c(
+    "Cheap Hotel" = "skyblue",
+    "Expensive Hotel" = "orange"
+  )) +
+  labs(
+    title = "Star Rating: Cheap vs. Expensive Hotels",
+    x = "Price Group",
+    y = "Star Rating",
+    fill = "Price Group"
+  )
+
+ggplot(data = hotel_group, aes(x = top_20_group, y = star_rating, fill = top_20_group)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c(
+    "Best 20 Hotel Score" = "red1",
+    "Out of Top 20" = "green2"
+  )) +
+  labs(
+    title = "Star Rating: Top 20 Hotels vs. Other Hotels",
+    x = "Hotel Score Group",
+    y = "Star Rating",
+    fill = "Hotel Group"
+  )
+```
+
+# Testing statistical significance between hotel groups and average star rating
+
+```{r}
+t.test(star_rating ~ top_20_group, data = hotel_group)
+# p-value is 2.645e-06
+# confidence interval (-0.9473755, -0.4692912)
+```
+
+Null hypothesis is that the mean star rating of best 20 hotel score group is equal to the mean star rating of the hotel outside of the top 20 group 
+
+Alternative hypothesis is that the mean star rating of the best 20 hotel score group is different from the mean star rating of the hotels outside of the top 20 group. 
+
+The mean star rating for best 20 hotel score group is 3.350000 and the mean star rating for the out of top 20 group is 4.048333.
+
+P-value is 2.645e-06. Since the p-value is smaller than 0.05, I reject the null hypothesis. There is strong evidence that the best 20 hotel score group and the out of top 20 group have a statistically significant difference in average star rating. 
+
+I am 95% confident that the true difference in mean star rating between the best 20 hotel score group and the out of top 20 group is between -0.9473755 and -0.4692912. Since the confidence interval does not include 0, I can conclude that there is a statistically significant difference in average star rating between the two groups. 
+
+The confidence interval is negative so that means best 20 hotel score group has a lower average star rating than the outside of top 20 hotel group in Banglaore India. 
+
+# Testing statistical significance between price groups and average star rating
+
+```{r}
+t.test(star_rating ~ price_groups, data = hotels)
+# P-value is 2.2e-16
+# Confidence interval (-1.453553, -1.290447)
+```
+
+Null hypothesis is that the mean star rating of cheap hotel group is euqal to the mean starting of expensive hotel group 
+
+Alternative hypothesis is that the mean star rating of cheap hotel group is different from the mean star rating of expensive hotel group. 
+
+The mean star rating for cheap hotel group is 3.344 and the mean star rating for expensive hotel group is 4.716. 
+
+P-value is 2.2e-16. Since the p-value is smaller than 0.05, I reject the null hypothesis. There is strong evidence that cheap hotels and expensive hotels have a statically significant difference in average star rating. 
+
+I am 95% confident that the true difference in mean star rating between the cheap hotel group and the expensive hotel group is between -1.453553 and -1.290447. Since the confidence interval does not include 0, I can conclude that there is a statistically significant difference in average star rating between the two price groups. 
+
+Because the confidence interval is negative, this means the cheap hotel group have a lower average star rating than expensive hotel group in Bangalore India. 
+
+# Box plot of hotel group and price per night & price group and star price per night
+
+```{r}
+ggplot(data = hotels, aes(x = price_groups, y = price_per_night_inr, fill = price_groups)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c(
+    "Cheap Hotel" = "skyblue",
+    "Expensive Hotel" = "orange"
+  )) +
+  labs(
+    title = "Price per Night: Cheap vs. Expensive Hotels",
+    x = "Price Group",
+    y = "Price per Night (INR)",
+    fill = "Price Group"
+  )
+
+ggplot(data = hotel_group, aes(x = top_20_group, y = price_per_night_inr, fill = top_20_group)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c(
+    "Best 20 Hotel Score" = "red1",
+    "Out of Top 20" = "green2"
+  )) +
+  labs(
+    title = "Price per Night: Top 20 Hotels vs. Other Hotels",
+    x = "Hotel Score Group",
+    y = "Price per Night (INR)",
+    fill = "Hotel Group"
+  )
+```
+
+# Testing statistical significance between hotel groups and price per night 
+
+```{r}
+t.test(price_per_night_inr ~ top_20_group, data = hotel_group)
+# P-value is 5.184e-15
+# Confidence interval  (-6634.920, -4618.621)
+```
+
+Null hypothesis is that the mean price per night of the best 20 hotel score is equal to the mean price per night of the hotels outside of the top 20 group. 
+
+Alternative hypothesis is that the mean price per night of the best 20 hotel score group is different from the mean price per night of the hotels outside of the top 20 group. 
+
+The mean price per night for the best 20 hotel score group is 4489.95 INR and the mean price per night for out of top 20 group is 10116.72.
+
+The p-value is 5.184e-15. Since the p-value is smaller than 0.05, I reject the null hypothesis. There is strong evidence that the best 20 hotel score group and the out of top 20 group have statistically significant difference in average price per night. 
+
+I am 95% confident that the true difference in mean price per night between the best 20 hotel score group and the out of top 20 group is between -6634.920 INR and -4618.621 INR. Since the confidence interval does not include 0, I can conclude that there is a statistically significant difference in average price per night between the two groups. 
+
+Because the confidence interval is negative, this means the best 20 hotel score group has a lower average price per night than the outside of the top 20 group in Bangalore India. 
+
+# Testing statistical significance between price groups and price per night 
+
+```{r}
+t.test(price_per_night_inr ~ price_groups, data = hotels)
+# P-value is 2.2e-16
+# Confidence interval (-11239.257, -9782.463)
+```
+
+Null hypothesis is that the mean price per night of cheap hotel group is equal to the mean price per night of expensive hotel group. 
+
+Alternative hypothesis is that the mean price per night of cheap hotel group is different from the mean price per night of expensive hotel group. 
+
+The mean price per night for cheap hotel group is 4636.22 INR and the mean price per night for expensive hotel is 15147.08 INR. 
+
+The p-value is 2.2e-16. Since the p-value is less smaller than 0.05, I reject the null hypothesis. There is strong evidence that the cheap hotel group and expensive hotel group have a statically difference in average price per night. 
+
+I am 95% confident that the true difference in mean price per night between cheap hotel group and expensive hotel group is between -11239.257 INR and -9782.463 INR. Since the confidence interval does not include 0, I can conclude that there is statistically significant difference in average price per night between the two groups. 
+
+Because the confidence interval is negative, this means cheap hotel group have a lower average rice per night than expensive hotel group in Bangalore India. 
+Limitation: this result is obvious because the groups were created using price_per_night_inr variable and divided into cheap group and expensive group. 
+
+# Finding the strongest predictor of the dataset. 
+
+```{r}
+m1 <- lm(price_per_night_inr ~ guest_rating + star_rating + room_size_sqft + distance_from_city_center_km, data = hotels)
+
+g1 <- glance(m1)
+g1$adj.r.squared
+# 0.7495666
+
+m2 <- lm(price_per_night_inr ~ guest_rating, data = hotels)
+
+g2 <- glance(m2)
+g2$adj.r.squared
+# -0.0003307886
+
+m3 <- lm(price_per_night_inr ~ star_rating, data = hotels)
+
+g3 <- glance(m3)
+g3$adj.r.squared
+#  0.7494985
+
+m4 <- lm(price_per_night_inr ~ room_size_sqft , data = hotels)
+
+g4 <- glance(m4)
+g4$adj.r.squared
+#  -0.002004386
+
+m5 <- lm(price_per_night_inr ~  distance_from_city_center_km, data = hotels)
+
+g5 <- glance(m5)
+g5$adj.r.squared
+#  0.002280603
+```
+
+After adjusting for the number of predictors in the model, the full regression model explains about 74.96% of the variation in hotel price per night. This show that the guest rating, star rating, room size and distance from the city center explains a large amount of the variation in price. 
+
+We can also see that star rating alone explains about 74.95% of the variation in the hotel price per night. This shows that star rating is the strongest predictor of price in this data set
+
+# Scatterplot of star rating and price per night 
+
+```{r}
+ggplot(data = hotels, aes(x = star_rating, y = price_per_night_inr)) + 
+  geom_jitter(width = 0.08, height = 0, alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(
+    title = "Relationship Between Star Rating and Price per Night",
+    x = "Star Rating",
+    y = "Price per Night (INR)"
+  )
+```
+
+# Testing if hotel price per night change significantly as star rating increases? 
+
+```{r}
+m6 <- lm(price_per_night_inr ~ star_rating, data = hotels)
+anova(m6)
+# P-value is 2.2e-16
+# F-value is 1491
+```
+Null hypothesis is that star rating does not explain a significant amount of variation in hotel price per night.
+
+Alternative hypothesis is that star rating does explain a significant amount of variation in hotel price per night.
+
+The F-value is 1484 and p-value is 2.2e-16. Since the p-value is smaller than 0.05, I reject the null hypothesis. There is strong evidence that star rating is significantly related to price per night. 
+
+We can conclude that hotels with higher star ratings tend to have higher prices per night. This support the regression result where the model using only star rating had an highest adjusted R-squared of 0.7494985. Star rating explains about 74.95% of the variation in the hotel price per night. 
+
+
+
+Best overall hotel is Elite MG Road Heights
+
+Best cost effective hotel is Elite MG Road Stay. Lowest price within the top 20 hotel score group with 2564 INR and is pretty close to the city center only 0.99km away. 
+
+Best room size is Emerald MG Road Suites. The room size is 688 sqft and is largest among the top 20 hotel score gorup. 
+
+Best guest rating hotel is Elite MG Road Heights and Royal Rajajinagar Retreat. Both hotel has guest rating of 9.5 among the top 20 hotel score group.
+
+In conclusion, this project use statistical methods to determine which hotels in Bangalore India provide the best overall value. First I clean the data set and create more normalized scores for guest rating, review count, roomsize, price and distance from city center. Then, I combine the five variables into equal weighted hotel score to rank the hotels and divide into the best 20 hotel score group and outside of best 20 hotel score group. I also dived between price groups to compare cheap and expensive hotels. I created box plots which helps visually compare difference between the groups. I used two sample t test to which differences were statistically significant. The t test show that cheap and expensive hotels did not have a significant difference in average guest rating or average room size, but they did have significant differences in distance from city center, star rating and price per night. THe best 20 hotel score group had significantly higher guest rating, lower prices and was significantly closer to the city center than the hotels outside the top 20 group. However, the best 20 hotel score group did not have a statically significant difference in room size at the 5% level. I also used regression models to find which variable best predicted hotel price per night. The full regression model with all the predictors explained about 74.96% of the variation in price, but star rating explained 74.95% which suggest star rating was the strongest predictor of hotel price in this data set. The ANOVA test I ran also support this result because it showed that star rating was significantly related to price per night. We can conclude, based on the hotel score, the best hotel overall was Elite MG Road Heights, while there are other strong options like Royal Rajainagar Retreat, Emerald MG Road Suites and Skyline MG Road Lodge. The results suggest that the best hotels were not simply the most expensive or the hotel with highest star rating, but the hotels that balanced strong guest ratings, many reviews, reasonable prices, good room size and convenient distance form the city center. Since the hotel score was created using these same variables, the result should be interpreted as patterns within the data set and scoring system than just definitive ranking of all real hotels in Bangalore India. 
